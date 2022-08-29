@@ -1,3 +1,8 @@
 #New File to Test
 
 #Added line to for add/commit Test
+
+# Paths that I want to make for python app:
+- Opens a text program that asks you what you want to do, open a note or create a note
+- There might be a function for creating a note 
+- When a note is open, have the code print text from the note always

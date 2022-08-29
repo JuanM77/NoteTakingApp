@@ -7,7 +7,7 @@ import calendar
 import random
 from os.path import exists  # This checks the path and see if it's coming
 
-#Checking
+#Checking file (not sure how it works, checks file location)
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
     try:
@@ -18,21 +18,33 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
 
     return os.path.join(base_path, relative_path)
+
+def createNote():
+    print("Stuff has been created")
+    pass
+
+def openNote():
+    pass
+
+def deleteNote():
+    pass
 #Create files and a menu:
 
 
 def main():
     print("Hello! Welcome to my note taking program!")
-    print("The options are: \n(Create)Create a new file \n(Open) Open a new file")
-    while True:
+    print("The options are: \n(Create) Creates a new file \n(Open) Open a new file \n(Delete) Deletes a note")
+    List = []
+    while True:        
         choice = input("What do you wish to make? ")
         choice.capitalize()
         if choice == "Create":
-            print("Stuff has been created")
-            break
+            createNote()
         elif choice == "Open":
-            print("Stuff has been opened")
-            break
+            openNote()
+        elif choice == "Delete":
+            print("Stuff has been deleted")
+            deleteNote
         else:
             print("A correct value has to be given")
 
