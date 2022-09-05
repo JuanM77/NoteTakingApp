@@ -1,7 +1,8 @@
 #New File to Test
 
 #Added line to for add/commit Test
-
+#The Item that I originally created will create a text file with the name and then add it.
+# The item will have the names and then it will get the names from the note file and add it to the list
 # Paths that I want to make for python app:
 - Opens a text program that asks you what you want to do, open a note or create a note
 - There might be a function for creating a note 
