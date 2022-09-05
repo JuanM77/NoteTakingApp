@@ -20,7 +20,7 @@ def resource_path(relative_path):
 
     return os.path.join(base_path, relative_path)
 
-def createNameNote(List):
+def createNameNote():
     nameNoteExists = exists("NameNote.txt")
     if nameNoteExists:
         pass
@@ -45,7 +45,11 @@ def createNote(List):
     print(file_name +  " document successfully created")
     fhandle_journal.close()
     print("Stuff has been created")
-    List.append(file_name)
+    #This section opens the NameNote text file and adds the name of the list
+    fhandle_NameNote = open("NameNote.txt", "a+")
+    fhandle_NameNote.write(file_name)
+
+    #Add way to check if note already exists
     
 
 def accessNote(List):
